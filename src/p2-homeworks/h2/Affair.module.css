@@ -1,0 +1,23 @@
+.body {
+    display: flex;
+    justify-content: space-between;
+    font-family: Bradley Hand, serif;;
+}
+
+.button {
+    font-family: Bradley Hand, serif;
+    width: 40px;
+    margin-top: 5px;
+    color: white;
+    border: solid;
+    border-radius: 8%;
+    background-color: #006600;
+}
+
+.name {
+    color: #5c0066;
+}
+
+.text {
+    color: #333030;
+}
