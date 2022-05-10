@@ -1,0 +1,14 @@
+
+.name {
+    border: 2px solid white ;
+    padding: 1px;
+}
+
+.error {
+    border: 2px solid red;
+    padding: 1px;
+}
+
+.errorMessage {
+    color: #f80000;
+}
