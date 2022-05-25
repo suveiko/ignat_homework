@@ -1,18 +1,16 @@
 .body {
-    background-color: #906bfd;
-    width: 240px;
+    width: 200px;
+    height: 180px;
+    display: grid;
+    grid-template-rows: 150px 30px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .button {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-.button_style {
-    font-family: Bradley Hand, serif;;
-    color: white;
-    border: solid;
-    border-radius: 8%;
-    background-color: #006600;
+    justify-content: center;
+    margin-right: 10px;
 }

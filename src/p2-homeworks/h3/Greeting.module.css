@@ -1,4 +1,7 @@
-
+.body {
+    height: 50px;
+    margin: 0 auto;
+}
 .name {
     border: 2px solid white ;
     padding: 1px;
@@ -11,4 +14,5 @@
 
 .errorMessage {
     color: #f80000;
+    margin-left: 10px;
 }

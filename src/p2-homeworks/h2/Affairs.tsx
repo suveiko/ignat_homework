@@ -2,6 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairPriorityType, AffairType, FilterType} from './HW2'
 import s from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
     data: DataArrayType[]
@@ -24,21 +25,30 @@ function Affairs(p: AffairsPropsType) {
         />
     ))
 
-    const onClickHandler = (FilterType: FilterType) => {
-        p.setFilter(FilterType)
-    }
+    const onClickHandlerAllHandler = () => p.setFilter('all')
+    const onClickHandlerHighHandler = () => p.setFilter('high')
+    const onClickHandlerMiddleHandler = () => p.setFilter('middle')
+    const onClickHandlerLowHandler = () => p.setFilter('low')
 
     return (
-        <div className={s.body}>
-            <div>{mappedAffairs}</div>
+        <div>
+            <div className={s.body}>
+                <div>{mappedAffairs}</div>
+            </div>
             <div className={s.button}>
-                <button className={s.button_style} onClick={() => onClickHandler('all')}>All</button>
-                <button className={s.button_style} onClick={() => onClickHandler('high')}>High</button>
-                <button className={s.button_style} onClick={() => onClickHandler('middle')}>Middle</button>
-                <button className={s.button_style} onClick={() => onClickHandler('low')}>Low</button>
+                <SuperButton onClick={onClickHandlerAllHandler}>All</SuperButton>
+                <SuperButton onClick={onClickHandlerHighHandler}>High</SuperButton>
+                <SuperButton onClick={onClickHandlerMiddleHandler}>Middle</SuperButton>
+                <SuperButton onClick={onClickHandlerLowHandler}>Low</SuperButton>
+                {/*<button className={s.button_style} onClick={onClickHandlerAllHandler}>All</button>*/}
+                {/*<button className={s.button_style} onClick={onClickHandlerHighHandler}>High</button>*/}
+                {/*<button className={s.button_style} onClick={onClickHandlerMiddleHandler}>Middle</button>*/}
+                {/*<button className={s.button_style} onClick={onClickHandlerLowHandler}>Low</button>*/}
             </div>
         </div>
+
     )
 }
 
 export default Affairs
+

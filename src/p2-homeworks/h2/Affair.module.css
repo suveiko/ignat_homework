@@ -1,23 +1,26 @@
 .body {
-    display: flex;
-    justify-content: space-between;
-    font-family: Bradley Hand, serif;;
-}
-
-.button {
-    font-family: Bradley Hand, serif;
-    width: 40px;
-    margin-top: 5px;
-    color: white;
-    border: solid;
-    border-radius: 8%;
-    background-color: #006600;
+    font-family: Arial,sans-serif;
 }
 
 .name {
-    color: #5c0066;
+    color: #58429b;
+    padding-right: 20px;
 }
 
-.text {
-    color: #333030;
+.high {
+    width: 70px;
+    color: #f10d0d;
+    padding-right: 20px;
+}
+
+.middle {
+    width: 70px;
+    color: #ff4141;
+    padding-right: 20px;
+}
+
+.low {
+    width: 70px;
+    color: #ffa0a0;
+    padding-right: 20px;
 }
