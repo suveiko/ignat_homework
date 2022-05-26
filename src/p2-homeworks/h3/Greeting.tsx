@@ -20,13 +20,11 @@ const Greeting: React.FC<GreetingPropsType> = (
             addUser()
         }
     }
-
     return (
         <div className={s.body}>
-            <SuperInputText value={name} onChange={setNameCallback} onKeyUp={onKeyUpHandler}/>
+            <SuperInputText value={name} onChange={setNameCallback} onKeyUp={onKeyUpHandler} error={error}/>
             <SuperButton onClick={addUser} disabled={name.trim() === ''}>Add</SuperButton>
             <span>{totalUsers}</span>
-            {error && <div className={s.errorMessage}>{error}</div>}
         </div>
     )
 }

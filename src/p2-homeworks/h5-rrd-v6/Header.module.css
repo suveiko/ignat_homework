@@ -1,0 +1,57 @@
+.nav {
+    position: relative;
+}
+
+.hidM {
+    display: block;
+    position: relative;
+    padding: 5px;
+    left: -240px;
+    transition: 0.4s;
+}
+
+.hidMT {
+    display: none;
+}
+
+.btn {
+    background-color: rgba(120, 166, 120, 0.99);
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 5px black;
+}
+
+.hidMT:checked ~ .btn {
+    left: 240px;
+}
+
+.hidMT:checked ~ .hidM {
+    left: 0;
+}
+
+.item {
+    margin: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.item:hover {
+    color: rgba(120, 166, 120, 0.99);
+    cursor: pointer;
+}
+
+.active {
+    margin: 5px;
+    color: rgba(120, 166, 120, 0.99);
+    text-decoration: none;
+}
