@@ -40,10 +40,6 @@ function Affairs(p: AffairsPropsType) {
                 <SuperButton onClick={onClickHandlerHighHandler}>High</SuperButton>
                 <SuperButton onClick={onClickHandlerMiddleHandler}>Middle</SuperButton>
                 <SuperButton onClick={onClickHandlerLowHandler}>Low</SuperButton>
-                {/*<button className={s.button_style} onClick={onClickHandlerAllHandler}>All</button>*/}
-                {/*<button className={s.button_style} onClick={onClickHandlerHighHandler}>High</button>*/}
-                {/*<button className={s.button_style} onClick={onClickHandlerMiddleHandler}>Middle</button>*/}
-                {/*<button className={s.button_style} onClick={onClickHandlerLowHandler}>Low</button>*/}
             </div>
         </div>
 

@@ -18,16 +18,17 @@ function Affair(props: AffairPropsType) {
             : props.affair.priority === 'low' ? s.low : ''
 
     return (
-        <tbody>
-        <tr className={s.body}>
-            <td className={s.name}>{props.affair.name}</td>
-            <td className={priorityColor}>{props.affair.priority}</td>
-            <td>
-                <SuperButton onClick={deleteCallback}>X</SuperButton>
-                {/*<button className={s.button} onClick={deleteCallback}>X</button>*/}
-            </td>
-        </tr>
-        </tbody>
+        <>
+            <tbody>
+            <tr className={s.body}>
+                <td className={s.name}>{props.affair.name}</td>
+                <td className={priorityColor}>{props.affair.priority}</td>
+                <td>
+                    <SuperButton onClick={deleteCallback}>X</SuperButton>
+                </td>
+            </tr>
+            </tbody>
+        </>
     )
 }
 

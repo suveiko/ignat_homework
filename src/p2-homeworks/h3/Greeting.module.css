@@ -1,7 +1,15 @@
 .body {
+    display: flex;
+    align-items: start;
     height: 50px;
     margin: 0 auto;
 }
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
 .name {
     border: 2px solid white ;
     padding: 1px;
@@ -15,4 +23,8 @@
 .errorMessage {
     color: #f80000;
     margin-left: 10px;
+}
+
+.users {
+    margin-top: 5px;
 }

@@ -22,9 +22,10 @@ const Greeting: React.FC<GreetingPropsType> = (
     }
     return (
         <div className={s.body}>
-            <SuperInputText value={name} onChange={setNameCallback} onKeyUp={onKeyUpHandler} error={error}/>
+            <div className={s.input}><SuperInputText value={name} onChange={setNameCallback} onKeyUp={onKeyUpHandler} error={error}/>
+            </div>
             <SuperButton onClick={addUser} disabled={name.trim() === ''}>Add</SuperButton>
-            <span>{totalUsers}</span>
+            <span className={s.users}>{totalUsers}</span>
         </div>
     )
 }
