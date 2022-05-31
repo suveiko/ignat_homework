@@ -4,6 +4,7 @@ function Junior () {
     return (
         <div>
             Next homework
+            {/*<HW7/>*/}
         </div>
     );
 }

@@ -1,0 +1,19 @@
+.container {
+    height: 25px;
+}
+
+.superSpan {
+    color: #cb4141;
+    margin-left: 5px;
+}
+
+.superSpan:hover {
+    color: #70a16e;
+    cursor: pointer;
+}
+
+.img {
+    height: 20px;
+    width: 20px;
+    border-radius: 0;
+}
