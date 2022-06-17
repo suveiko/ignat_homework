@@ -1,6 +1,5 @@
 import {UserType} from "../HW8";
 
-
 export type SortAction = {
     type: 'sort',
     payload: 'up' | 'down'
