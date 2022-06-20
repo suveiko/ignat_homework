@@ -45,8 +45,6 @@ function Clock() {
                         {stringDate}
                     </div>
                 )}
-
-
             </div>
             <SuperButton onClick={start}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>

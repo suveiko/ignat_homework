@@ -3,6 +3,7 @@
     align-items: start;
     height: 50px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .input {
