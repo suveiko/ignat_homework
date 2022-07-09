@@ -11,7 +11,6 @@ function HW6() {
 
     return (
         <div>
-            <hr/>
             homeworks 6:
 
             {/*should work (должно работать)*/}
@@ -25,7 +24,6 @@ function HW6() {
             </div>
             <SuperButton onClick={save}>save</SuperButton>
             <SuperButton onClick={restore}>restore</SuperButton>
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperEditableSpan/>*/}
             <hr/>

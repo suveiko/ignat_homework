@@ -1,0 +1,26 @@
+.container {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark {
+    background: dimgrey;
+}
+
+.red {
+    background: lightcoral;
+}
+
+.lightgreen {
+    background: lightgreen;
+}
+
+.darkslateblue {
+    background: darkslateblue;
+}
+
+.regular {
+    background: #cbcbcb
+}

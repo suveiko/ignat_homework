@@ -3,7 +3,7 @@ import Message from "./Message";
 import avka from './icon/icon.jpg'
 
 const messageData = {
-    avatar: <img src = {avka}  alt = "ava" />,
+    avatar: <img src={avka} alt="ava"/>,
     name: 'Sasha',
     message: 'Hi, How are you?',
     time: '22:22',
