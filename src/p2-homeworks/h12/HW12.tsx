@@ -18,14 +18,13 @@ function HW12() {
             <hr/>
             homeworks 12:
             <div className={`${s[theme]} ${s.container}`}>
-
                 <span className={s[theme + '-text']}>
-               <SuperRadio
-                   value={theme}
-                   options={themes}
-                   onChangeOption={onChangeCallback}
-               />
-            </span>
+                    <SuperRadio
+                        value={theme}
+                        options={themes}
+                        onChangeOption={onChangeCallback}
+                    />
+                </span>
             </div>
         </>
     );
